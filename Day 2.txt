@@ -1,0 +1,14 @@
+public static void solve(double meal_cost, int tip_percent, int tax_percent) {
+    // Write your code here
+    
+        double tip = meal_cost * (tip_percent/100.0);
+        double tax = meal_cost * (tax_percent/100.0);
+        
+        double total = meal_cost + tip + tax;
+        System.out.println((int)Math.round(total));
+
+    }
+
+}
+
+/* The Math.round() function in Java is used to round a floating-point number to the nearest integer. If the fractional part of the number is greater than or equal to 0.5, it rounds the number up to the next integer. Otherwise, it rounds the number down to the previous integer. */
